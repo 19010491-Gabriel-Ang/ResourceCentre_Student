@@ -50,8 +50,7 @@ public class ResourceCentreTest {
 	}
 
 	@Test
-	// change by Gabriel
-	// second change by Gabriel again~ :D
+	//TBC by Gabriel ;3
 	public void addChromebookTest() {
 		// fail("Not yet implemented");
 		// write your code here
