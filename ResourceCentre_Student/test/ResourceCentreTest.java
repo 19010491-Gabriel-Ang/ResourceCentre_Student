@@ -106,26 +106,26 @@ public class ResourceCentreTest {
 		// fail("Not yet implemented");
 		// write your code here
         //Create UI to obtain the type of items to check out
-		assertNotNull("Create UI to obtain the type of items to check out", camcorderList);
-
-		// Retrieve available items
-		String allCamcorder = ResourceCentre.retrieveAllCamcorder(camcorderList);
-		String testOutput = "";
-		assertEquals("Check that ViewAllCamcorderlist", testOutput, allCamcorder);
-
-		//Create UI to display available items
-		testOutput = String.format("%-10s %-30s %-10s %-10s %-20d\n", "CC0011", "Nikon HDSLR", "Yes", "", 40);
-		testOutput += String.format("%-10s %-30s %-10s %-10s %-20d\n", "CC0012", "Sony DSC-RX100M7", "Yes", "", 20);
-
-		assertEquals("Check that ViewAllCamcorderlist", testOutput, allCamcorder);
-
-
-		//Create UI to obtain the item code to be check out
-		assertEquals("Check that ViewAllCamcorderlistfor the item code", testOutput, allCamcorder);
-		
-		
-		//Update status of item as unavailable
-		allCamcorder = ResourceCentre.retrieveAllCamcorder(camcorderList);
+//		assertNotNull("Create UI to obtain the type of items to check out", camcorderList);
+//
+//		// Retrieve available items
+//		String allCamcorder = ResourceCentre.retrieveAllCamcorder(camcorderList);
+//		String testOutput = "";
+//		assertEquals("Check that ViewAllCamcorderlist", testOutput, allCamcorder);
+//
+//		//Create UI to display available items
+//		testOutput = String.format("%-10s %-30s %-10s %-10s %-20d\n", "CC0011", "Nikon HDSLR", "Yes", "", 40);
+//		testOutput += String.format("%-10s %-30s %-10s %-10s %-20d\n", "CC0012", "Sony DSC-RX100M7", "Yes", "", 20);
+//
+//		assertEquals("Check that ViewAllCamcorderlist", testOutput, allCamcorder);
+//
+//
+//		//Create UI to obtain the item code to be check out
+//		assertEquals("Check that ViewAllCamcorderlistfor the item code", testOutput, allCamcorder);
+//		
+//		
+//		//Update status of item as unavailable
+//		allCamcorder = ResourceCentre.retrieveAllCamcorder(camcorderList);
 		
 		
 		//test if the expected output string same as the list of camcorders retrieved
