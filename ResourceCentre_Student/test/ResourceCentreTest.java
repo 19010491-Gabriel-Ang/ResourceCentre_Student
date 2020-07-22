@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertSame;
+=======
+
+import static org.junit.Assert.*;
+>>>>>>> branch 'master' of https://github.com/19010491-Gabriel-Ang/ResourceCentre_Student.git
 
 import java.util.ArrayList;
 
@@ -51,8 +56,12 @@ public class ResourceCentreTest {
 	}
 
 	@Test
+<<<<<<< HEAD
 	// change by Gabriel
 	// second change by Gabriel again~ :D
+=======
+	//TBC by Gabriel ;3
+>>>>>>> branch 'master' of https://github.com/19010491-Gabriel-Ang/ResourceCentre_Student.git
 	public void addChromebookTest() {
 		// fail("Not yet implemented");
 		// write your code here
@@ -99,11 +108,49 @@ public class ResourceCentreTest {
 	}
 
 	@Test
+	//change by christy
+	//this method unit test case designed by me.
 	public void doLoanChromebookTest() {
+<<<<<<< HEAD
 		// fail("Not yet implemented");
 		// write your code here
+=======
+        //Create UI to obtain the type of items to check out
+		assertNotNull("Create UI to obtain the type of items to check out", camcorderList);
+
+		// Retrieve available items
+		String allCamcorder = ResourceCentre.retrieveAllCamcorder(camcorderList);
+		String testOutput = "";
+		assertEquals("Check that ViewAllCamcorderlist", testOutput, allCamcorder);
+
+		//Create UI to display available items
+		testOutput = String.format("%-10s %-30s %-10s %-10s %-20d\n", "CC0011", "Nikon HDSLR", "Yes", "", 40);
+		testOutput += String.format("%-10s %-30s %-10s %-10s %-20d\n", "CC0012", "Sony DSC-RX100M7", "Yes", "", 20);
+
+		assertEquals("Check that ViewAllCamcorderlist", testOutput, allCamcorder);
+
+
+		//Create UI to obtain the item code to be check out
+		assertEquals("Check that ViewAllCamcorderlistfor the item code", testOutput, allCamcorder);
+		
+		
+		//Update status of item as unavailable
+		allCamcorder = ResourceCentre.retrieveAllCamcorder(camcorderList);
+		
+		
+		//test if the expected output string same as the list of camcorders retrieved
+		// from the SourceCentre
+>>>>>>> branch 'master' of https://github.com/19010491-Gabriel-Ang/ResourceCentre_Student.git
 	}
 
+<<<<<<< HEAD
+=======
+	// fail("Not yet implemented");
+	
+	
+	
+
+>>>>>>> branch 'master' of https://github.com/19010491-Gabriel-Ang/ResourceCentre_Student.git
 	@Test
 	public void doReturnCamcorderTest() {
 		// fail("Not yet implemented");
